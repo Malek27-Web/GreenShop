@@ -103,9 +103,6 @@ function AsideHome() {
               </li>
             ))}
           </ul>
-          <br />
-          <br />
-          <img src="./SuperSaleBanner.svg" alt="" />
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import AllPlants from "./AllPlants";
 import NewArrivals from "./NewArrivals";
 import Sales from "./Sales";
 import gsap from "gsap";
+import FindMoreCard from "./FindMoreCard";
 
 function MainHome() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -114,6 +115,26 @@ function MainHome() {
             {button}
           </button>
         ))}
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="flex flex-row justify-around overflow-hidden">
+        <FindMoreCard
+          imagePath="SummerCactus.png"
+          title="Summer Cactus & Succulents"
+          description="We are an online plant shop offering a wide range of cheap and trendy plants"
+        />
+        <FindMoreCard
+          imagePath="StylingTrends.png"
+          title="Styling Trends & much more"
+          description="We are an online plant shop offering a wide range of cheap and trendy plants"
+        />
       </div>
     </div>
   );
