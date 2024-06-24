@@ -6,14 +6,14 @@ interface Props {
 
 function FindMoreCard({ imagePath, title, description }: Props) {
   return (
-    <div className="h-68 md:visible    flex-row invisible md:flex   w-2/5 items-center justify-center  bg-[#FBFBFB] relative">
+    <div className="h-68 md:visible  flex-row shadow-lg  lg:flex  w-7/12 md:w-5/12 items-center justify-center pb-4 md:pb-1 rounded md:rounded-none bg-[#FBFBFB] relative">
       {" "}
-      <img src={imagePath} alt="" className="w-3/5" />
-      <div className="flex flex-col whitespace-normal items-end pr-6  gap-y-4 ">
-        <p className=" text-lg leading-10  font-extrabold  text-right text-[#3D3D3D]">
+      <img src={imagePath} alt="" />
+      <div className="flex flex-col whitespace-normal items-center md:items-end md:pr-5  gap-y-4 ">
+        <p className=" text-lg   font-extrabold  text-center md:text-right text-[#3D3D3D]">
           {title}
         </p>
-        <p className="text-right text-base leading-7 text-[#727272]   rounded ">
+        <p className=" text-center md:text-right text-base  text-[#727272]   rounded ">
           {description}
         </p>
         <button className="text-white  w-32 font-semibold rounded p-2  whitespace-nowrap bg-[#46A358]">

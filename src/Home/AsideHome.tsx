@@ -76,7 +76,7 @@ function AsideHome() {
             }}
           />
           <p className="pl-4 text-[#3D3D3D] font-Poppins font-medium">
-            Selected Price Range:{" "}
+            Price:{" "}
             <span className="text-[#46A358]">
               {" "}
               ${value[0]} - ${value[1]}
