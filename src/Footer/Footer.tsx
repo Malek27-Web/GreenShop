@@ -2,7 +2,7 @@ function Footer() {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="md:visible invisible md:flex md:justify-center">
-        <div className="bg-[#FBFBFB] w-5/6 h-full pb-4 ">
+        <div className="bg-[#FBFBFB] w-11/12 h-full pb-4 ">
           <div className="flex justify-between items-center p-5">
             <div className="flex flex-col items-start w-1/4">
               <img src="./FooterPlant1.png" alt="" className="w-1/4" />

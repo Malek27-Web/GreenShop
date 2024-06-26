@@ -1,4 +1,18 @@
 import { useState } from "react";
+import Badge, { BadgeProps } from "@mui/material/Badge";
+import { styled } from "@mui/material/styles";
+import IconButton from "@mui/material/IconButton";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { Link } from "react-router-dom";
+
+const StyledBadge = styled(Badge)<BadgeProps>(({ theme }) => ({
+  "& .MuiBadge-badge": {
+    right: -3,
+    top: 0,
+    border: `2px solid ${theme.palette.background.paper}`,
+    padding: "0 4px",
+  },
+}));
 
 function NavBar() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -7,7 +21,12 @@ function NavBar() {
     setActiveIndex(index);
   };
 
-  const menuItems = ["Home", "Shop", "Plant Care", "Blogs"];
+  const menuItems = [
+    { name: "Home", path: "/home" },
+    { name: "Shop", path: "/shop" },
+    { name: "Plant Care", path: "/plant-care" },
+    { name: "Blogs", path: "/blogs" },
+  ];
 
   return (
     <div>
@@ -31,7 +50,7 @@ function NavBar() {
                 onClick={() => handleClick(index)}
                 className="hover:underline underline-offset-[2.125rem] decoration-[#46A358] decoration-4 hover:font-bold"
               >
-                {item}
+                <Link to={item.path}> {item.name}</Link>
               </li>
             ))}
           </ul>
@@ -41,7 +60,11 @@ function NavBar() {
               <img src="./Search.svg" alt="Search" />
             </li>
             <li>
-              <img src="./ShoppingBefore.svg" alt="Shopping" />
+              <IconButton aria-label="cart">
+                <StyledBadge badgeContent={2} color="success">
+                  <ShoppingCartIcon />
+                </StyledBadge>
+              </IconButton>
             </li>
             <li>
               <button className="bg-[#46A358] p-2 flex items-center gap-x-2 text-white rounded w-28 justify-center">

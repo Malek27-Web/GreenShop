@@ -1,15 +1,12 @@
-import HeaderMain from "./Home/HeaderMain";
-import MainHome from "./Home/MainHome";
-import NavBar from "./NavBar/NavBar";
+// import Home from "./Home/Home";
 
+import Shop from "./Shop/Shop";
 
 function App() {
   return (
     <div>
-      <NavBar />
-      <HeaderMain />
-      <br />
-      <MainHome />
+      {/* <Home /> */}
+      <Shop />
     </div>
   );
 }

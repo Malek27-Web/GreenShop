@@ -138,6 +138,14 @@ function MainHome() {
       <br />
       <br />
       <br />
+      <div className="flex flex-col justify-center items-center">
+        <h1 className=" font-bold text-xl">Our Blog Posts</h1>
+        <p className="text-[#727272]">
+          We are an online plant shop offering a wide range of cheap and trendy
+          plants.
+        </p>
+        <br />
+      </div>
       <div className="flex flex-col items-center gap-y-5 md:gap-y-0 md:flex-row md:justify-around">
         <BlogCard
           imgLink="./BlogPlant1.png"
