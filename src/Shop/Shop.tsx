@@ -4,7 +4,10 @@ import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
 import React from "react";
 import BasicTabs from "./BasicTabs";
+import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
+import SliderPlants from "./SliderPlants";
+import { Link } from "react-router-dom";
 
 function Shop() {
   // State to keep track of the currently displayed image
@@ -63,6 +66,7 @@ function Shop() {
       }
     });
   };
+
   return (
     <div className=" overflow-x-hidden">
       <NavBar />
@@ -77,21 +81,21 @@ function Shop() {
             </div>
             <div
               className="bg-[#FBFBFB] flex items-center justify-center w-28 h-28 cursor-pointer"
-              onClick={() => handleImageClick("./Product.png")}
+              onClick={() => handleImageClick("./Product2.png")}
             >
-              <img src="./Product.png" alt="Product" />
-            </div>
-            <div
-              className="bg-[#FBFBFB] flex items-center justify-center w-28 h-28 cursor-pointer"
-              onClick={() => handleImageClick("./Product8.png")}
-            >
-              <img src="./Product8.png" className="w-32" alt="Shop Product 1" />
+              <img src="./Product2.png" alt="Product" />
             </div>
             <div
               className="bg-[#FBFBFB] flex items-center justify-center w-28 h-28 cursor-pointer"
               onClick={() => handleImageClick("./Product.png")}
             >
-              <img src="./Product.png" alt="Product" />
+              <img src="./Product.png" className="w-32" alt="Shop Product 1" />
+            </div>
+            <div
+              className="bg-[#FBFBFB] flex items-center justify-center w-28 h-28 cursor-pointer"
+              onClick={() => handleImageClick("./Product3.png")}
+            >
+              <img src="./Product3.png" alt="Product" />
             </div>
           </div>
           <div className="bg-[#FBFBFB] flex items-center justify-center p-20 ">
@@ -165,7 +169,7 @@ function Shop() {
             </div>
             <div className="flex gap-x-2">
               <button className="uppercase w-36 p-2 rounded font-semibold bg-[#46A358] text-white ">
-                Buy now
+                <Link to="/shopcart">Buy now </Link>
               </button>
               <button className="uppercase w-36 rounded font-semibold text-[#46A358] bg-transparent border border-[#46A358] p-2">
                 Add to cart
@@ -201,8 +205,13 @@ function Shop() {
         </div>
       </div>
       <br />
-
       <BasicTabs />
+      <br />
+      <SliderPlants />
+
+      <br />
+      <br />
+      <Footer />
     </div>
   );
 }

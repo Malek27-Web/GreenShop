@@ -1,12 +1,9 @@
-// import Home from "./Home/Home";
-
-import Shop from "./Shop/Shop";
+import Home from "./Home/Home";
 
 function App() {
   return (
     <div>
-      {/* <Home /> */}
-      <Shop />
+      <Home />
     </div>
   );
 }

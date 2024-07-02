@@ -60,11 +60,13 @@ function NavBar() {
               <img src="./Search.svg" alt="Search" />
             </li>
             <li>
-              <IconButton aria-label="cart">
-                <StyledBadge badgeContent={2} color="success">
-                  <ShoppingCartIcon />
-                </StyledBadge>
-              </IconButton>
+              <Link to="/shopcart">
+                <IconButton aria-label="cart">
+                  <StyledBadge badgeContent={2} color="success">
+                    <ShoppingCartIcon />
+                  </StyledBadge>
+                </IconButton>
+              </Link>
             </li>
             <li>
               <button className="bg-[#46A358] p-2 flex items-center gap-x-2 text-white rounded w-28 justify-center">
