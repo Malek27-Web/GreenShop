@@ -69,7 +69,7 @@ function NavBar() {
               </Link>
             </li>
             <li>
-              <button className="bg-[#46A358] p-2 flex items-center gap-x-2 text-white rounded w-28 justify-center">
+              <button className="bg-[#46A358] p-2 flex items-center gap-x-2 whitespace-nowrap text-white rounded w-32 justify-center">
                 <img src="./Logout.svg" alt="Logout" />
                 Login
               </button>

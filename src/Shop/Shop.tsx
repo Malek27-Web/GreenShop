@@ -172,7 +172,7 @@ function Shop() {
                 <Link to="/shopcart">Buy now </Link>
               </button>
               <button className="uppercase w-36 rounded font-semibold text-[#46A358] bg-transparent border border-[#46A358] p-2">
-                Add to cart
+                <Link to="/checkout">Add to cart </Link>
               </button>
               <button
                 onClick={handleLikeClick}
