@@ -2,7 +2,6 @@ import * as React from "react";
 import Radio from "@mui/material/Radio";
 import OrderResumeCart from "./OrderResumeCart";
 import { green } from "@mui/material/colors";
-import Footer from "../Footer/Footer";
 
 function OrderHistory() {
   const [selectedValue, setSelectedValue] = React.useState("a");
