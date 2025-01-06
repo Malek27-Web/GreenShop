@@ -1,13 +1,15 @@
+import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
 import CountrySelector from "./CountrySelector";
+import OrderHistory from "./OrderHistory";
 
 function Checkout() {
   return (
     <div>
       <NavBar />
 
-      <div className="flex justify-around mt-5">
-        <div className="flex flex-col w-[30rem]">
+      <div className="flex justify-around mt-5  text-[#3D3D3D] ">
+        <div className="flex flex-col  w-1/2">
           <h1
             className="
            font-bold"
@@ -15,7 +17,7 @@ function Checkout() {
             Billing Adress
           </h1>
           <form action="" className="mt-2 flex flex-col gap-y-3">
-            <div className="flex justify-between items-center bg-slate-200 w-[45rem]">
+            <div className="flex justify-between items-center  w-[45rem]">
               <div className="flex flex-col">
                 <label htmlFor="firstName" className="leading-9">
                   First Name <span className=" text-red-600">*</span>
@@ -37,7 +39,7 @@ function Checkout() {
               </div>
             </div>
 
-            <div className="flex justify-between items-center bg-slate-200 w-[45rem]">
+            <div className="flex justify-between items-center  w-[45rem]">
               <div className="flex flex-col">
                 <label className="leading-9">
                   Country / Region <span className=" text-red-600">*</span>
@@ -56,7 +58,7 @@ function Checkout() {
               </div>
             </div>
 
-            <div className="flex justify-between items-center bg-slate-200 w-[45rem]">
+            <div className="flex justify-between items-center  w-[45rem]">
               <div className="flex flex-col">
                 <label className="leading-9">
                   Street Adress <span className=" text-red-600">*</span>
@@ -78,7 +80,7 @@ function Checkout() {
               </div>
             </div>
 
-            <div className="flex justify-between items-center bg-slate-200 w-[45rem]">
+            <div className="flex justify-between items-center  w-[45rem]">
               <div className="flex flex-col">
                 <label className="leading-9">
                   State <span className=" text-red-600">*</span>
@@ -101,7 +103,7 @@ function Checkout() {
               </div>
             </div>
 
-            <div className="flex justify-between items-center bg-slate-200 w-[45rem]">
+            <div className="flex justify-between items-center w-[45rem]">
               <div className="flex flex-col">
                 <label className="leading-9">
                   Email Adress <span className=" text-red-600">*</span>
@@ -124,13 +126,15 @@ function Checkout() {
               </div>
             </div>
             <div className="flex flex-col">
-              <label className="leading-9">Order notes (optional)</label>
+              <label className="leading-9 ">Order notes (optional)</label>
               <textarea className="border rounded border-[#EAEAEA] outline-none w-96 h-44"></textarea>
             </div>
           </form>
         </div>
-        <div></div>
+        <OrderHistory />
       </div>
+      <br />
+      <Footer />
     </div>
   );
 }
